@@ -1,0 +1,17 @@
+<p>buttondemo works!</p>
+
+<h1>Hey, {{ name }}!</h1>
+
+<label for="nameInput1">Name:</label>
+<input id="nameInput1" #ipbox (input)="name=(ipbox.value)" placeholder="Enter your name"><br><br>
+
+<label for="nameInput">Name:</label>
+<input id="nameInput" #ipbox><br><br>
+
+<button (click)="name = ipbox.value">Show</button>
+
+<button (click)="name = 'Admin'; ipbox.value = ''">Reset</button>
+
+
+<!-- Read i/p as text , on uppercase button click ,
+change the case ad assign to other inputbox -->
