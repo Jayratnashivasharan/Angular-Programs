@@ -5,7 +5,7 @@ import { DirectivedemoComponent } from './directivedemo/directivedemo.component'
 
 @Component({
   selector: 'app-root',
-  imports: [ ButtondemoComponent,DirectivedemoComponent,CommonModule],
+  imports: [ ButtondemoComponent,DirectivedemoComponent,CommonModule,ButtondemoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
