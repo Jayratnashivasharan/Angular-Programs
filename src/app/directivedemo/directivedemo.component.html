@@ -1,9 +1,24 @@
-<p>directivedemo works!</p>
+<!-- <p[[ngStyle]="{color: pcolor}"]>directivedemo works!</p> -->
+
+<!-- <h1>{{isLogin}}</h1> -->
 
 
 <h1 *ngIf='isLogin'>Welcome User</h1>
-<h1>{{isLogin}}</h1>
+<hr>
+<div>
+  <ul *ngFor="let city of cities">
+    <li>{{city}}</li>
+  </ul>
+</div>
 
-<h1>{{cities}}</h1>
 <h1>{{pcolor}}</h1>
 
+<div [ngSwitch]="pcolor">
+  <p *ngSwitchCase="'red'">The color is Red</p>
+  <p *ngSwitchCase="'blue'">The color is Blue</p>
+  <p *ngSwitchDefault="'unknown'">The color is Unknown</p>
+
+
+</div>
+
+<!-- <h1 *ngIf='pcolor'></h1> -->

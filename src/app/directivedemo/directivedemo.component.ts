@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class DirectivedemoComponent {
   isLogin=true;
 
-  cities=["pune","Mumbai","solapur"];
+  cities=["Pune","Mumbai","Solapur"];
 
   pcolor="red";
 }
