@@ -11,7 +11,13 @@
   </ul>
 </div>
 <hr>
-<h1>{{pcolor}}</h1>
+<!-- <h1>{{pcolor}}</h1> -->
+<hr>
+Name:<input *ngIf="isVisible" #ipbox placeholder="Enter name"><br>
+<button (click)="isVisible=true">Show</button>
+<hr>
+
+
 
 <div [ngSwitch]="pcolor">
   <p *ngSwitchCase="'red'">The color is Red</p>

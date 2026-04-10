@@ -13,4 +13,6 @@ export class DirectivedemoComponent {
   cities=["Pune","Mumbai","Solapur"];
 
   pcolor="red";
+  isVisible=false;
+
 }
