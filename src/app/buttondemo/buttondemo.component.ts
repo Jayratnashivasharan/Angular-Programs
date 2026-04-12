@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-buttondemo',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './buttondemo.component.html',
   styleUrl: './buttondemo.component.css'
