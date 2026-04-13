@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
+import { FormDemoComponent } from './form-demo/form-demo.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DirectivedemoComponent],
+  imports: [FormDemoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,0 +1,27 @@
+<p>form-demo works!</p>
+
+<hr style="border: 1px solid black;">
+<hr style="border: 1px solid black;">
+
+
+<h3>Forms</h3>
+<form #contactForm="ngForm"(ngSubmit)="onSubmit(contactForm)">
+  <p>
+    <label for="firstname">First Name:</label>
+    <input type="text" #fname name="firstname" ngModel placeholder="Enter your first name">
+  </p>
+   <p>
+    <label for="lastname">Last Name:</label>
+    <input type="text" #fname name="lastname" ngModel placeholder="Enter your last name">
+  </p>
+  <p>
+    <label for="Email">Email:</label>
+    <input type="text" name="email" id="email" ngModel placeholder="Enter your email">
+  </p>
+
+  <p>
+    <button type="submit" (click)="name=fname.value">Submit</button>
+  </p>
+</form>
+<p *ngIf="submitted">Thank you for Registration {{name}}</p>
+<p *ngIf="submitted">Submitted!</p>
