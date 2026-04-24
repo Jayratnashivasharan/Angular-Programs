@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ReactiveformdemoComponent } from './reactiveformdemo/reactiveformdemo.component';
 import { DataServiceService } from './services/data-service.service';
-import { PanelAComponent } from './services/panel-a/panel-a.component';
-import { PanelBComponent } from './services/panel-b/panel-b.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,PanelAComponent,PanelBComponent],
+  imports: [CommonModule,ReactiveformdemoComponent],
   providers: [DataServiceService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
